@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - ChakiArt</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-[#FFFBF5]">
+
+    <!-- Encabezado y Navegación -->
+    <header id="header" class="bg-white/80 backdrop-blur-sm fixed top-0 left-0 w-full z-50 shadow-md smooth-transition">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-2">
+                <img src="images/chakiart_logo.png" alt="Logo ChakiArt" class="h-12 w-12 object-contain" onerror="this.onerror=null;this.src='https://placehold.co/100x100/FFFBF5/4A4A4A?text=Logo';">
+                <span class="text-2xl font-craft text-pink-600">ChakiArt</span>
+            </a>
+            
+            <nav class="hidden md:flex items-center space-x-8">
+                <div class="dropdown relative">
+                    <a href="invitaciones.html" class="text-gray-700 hover:text-pink-600 smooth-transition pb-3 -mb-3">Invitaciones</a>
+                    <div class="dropdown-content rounded-md bg-white shadow-lg py-1">
+                        <a href="invitaciones.html#invitaciones-fisicas" class="block px-4 py-2 text-sm text-gray-700 hover:bg-pink-100 hover:text-pink-600">Físicas</a>
+                        <a href="invitaciones.html#invitaciones-digitales" class="block px-4 py-2 text-sm text-gray-700 hover:bg-pink-100 hover:text-pink-600">Digitales</a>
+                    </div>
+                </div>
+                <a href="articulos.html" class="text-gray-700 hover:text-pink-600 smooth-transition">Artículos para Fiestas</a>
+                <a href="etiquetas.html" class="text-gray-700 hover:text-pink-600 smooth-transition">Etiquetas</a>
+                <a href="varios.html" class="text-gray-700 hover:text-pink-600 smooth-transition">Varios</a>
+                <a href="contacto.html" class="text-pink-600 font-bold smooth-transition">Contacto</a>
+            </nav>
+
+            <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4 space-y-2 bg-white">
+            <a href="invitaciones.html" class="block text-gray-700 hover:text-pink-600 py-2">Invitaciones</a>
+            <a href="articulos.html" class="block text-gray-700 hover:text-pink-600 py-2">Artículos para Fiestas</a>
+            <a href="etiquetas.html" class="block text-gray-700 hover:text-pink-600 py-2">Etiquetas</a>
+            <a href="varios.html" class="block text-gray-700 hover:text-pink-600 py-2">Varios</a>
+            <a href="contacto.html" class="block text-pink-600 font-bold py-2">Contacto</a>
+        </div>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="container mx-auto px-6 py-16 pt-32">
+        <section class="max-w-2xl mx-auto">
+            <h2 class="text-4xl font-bold text-pink-600 mb-4 text-center">¡Hablemos!</h2>
+            <p class="text-lg text-gray-600 mb-12 text-center">¿Tienes una idea o quieres cotizar un proyecto? Rellena el formulario y me pondré en contacto contigo.</p>
+            
+            <!-- CAMBIO: Se remueven 'action' y 'method', y se añade un ID para JavaScript -->
+            <form id="contact-form-js" class="space-y-6">
+                <div>
+                    <label for="name" class="block text-gray-700 font-semibold mb-2">Nombre</label>
+                    <input type="text" id="name" name="name" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-pink-500 focus:border-pink-500">
+                </div>
+                <div>
+                    <label for="email" class="block text-gray-700 font-semibold mb-2">Correo Electrónico</label>
+                    <input type="email" id="email" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-pink-500 focus:border-pink-500">
+                </div>
+                <div>
+                    <label for="message" class="block text-gray-700 font-semibold mb-2">Mensaje</label>
+                    <textarea id="message" name="message" rows="5" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-pink-500 focus:border-pink-500"></textarea>
+                </div>
+                <div>
+                    <button type="submit" class="w-full bg-pink-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-pink-700 smooth-transition">
+                        Enviar Mensaje
+                    </button>
+                </div>
+            </form>
+            <!-- Este elemento mostrará el estado del envío -->
+            <p id="form-status" class="text-center mt-4"></p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 border-t mt-20">
+        <div class="container mx-auto px-6 py-8 text-center text-gray-600">
+            <p>&copy; 2024 ChakiArt. Todos los derechos reservados.</p>
+            <p class="mt-2">Hecho con ❤️ para tus momentos especiales.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

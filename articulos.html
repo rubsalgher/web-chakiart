@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artículos para Fiestas - ChakiArt</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Enlace a la hoja de estilos CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-[#FFFBF5]">
+
+    <!-- Encabezado y Navegación -->
+    <header id="header" class="bg-white/80 backdrop-blur-sm fixed top-0 left-0 w-full z-50 shadow-md smooth-transition">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-2">
+                <img src="images/chakiart_logo.png" alt="Logo ChakiArt" class="h-12 w-12 object-contain" onerror="this.onerror=null;this.src='https://placehold.co/100x100/FFFBF5/4A4A4A?text=Logo';">
+                <span class="text-2xl font-craft text-pink-600">ChakiArt</span>
+            </a>
+            
+            <nav class="hidden md:flex items-center space-x-8">
+                <div class="dropdown relative">
+                    <!-- CORRECCIÓN: Se agrega padding inferior (pb-3) y un margen negativo (-mb-3) para crear un "puente" invisible que mantiene el hover -->
+                    <a href="invitaciones.html" class="text-gray-700 hover:text-pink-600 smooth-transition">Invitaciones</a>
+                    <!-- CORRECCIÓN: Se elimina el margen superior (mt-2) que causaba el espacio -->
+                    <div class="dropdown-content rounded-md bg-white shadow-lg py-1">
+                        <a href="invitaciones.html#invitaciones-fisicas" class="block px-4 py-2 text-sm text-gray-700 hover:bg-pink-100 hover:text-pink-600">Físicas</a>
+                        <a href="invitaciones.html#invitaciones-digitales" class="block px-4 py-2 text-sm text-gray-700 hover:bg-pink-100 hover:text-pink-600">Digitales</a>
+                    </div>
+                </div>
+                <a href="articulos.html" class="text-pink-600 font-bold smooth-transition">Artículos para Fiestas</a>
+                <a href="etiquetas.html" class="text-gray-700 hover:text-pink-600 smooth-transition">Etiquetas</a>
+                <a href="varios.html" class="text-gray-700 hover:text-pink-600 smooth-transition">Varios</a>
+                <a href="contacto.html" class="text-gray-700 hover:text-pink-600 smooth-transition">Contacto</a>
+            </nav>
+
+            <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4 space-y-2 bg-white">
+            <a href="invitaciones.html" class="block text-gray-700 hover:text-pink-600 py-2">Invitaciones</a>
+            <a href="articulos.html" class="block text-pink-600 font-bold py-2">Artículos para Fiestas</a>
+            <a href="etiquetas.html" class="block text-gray-700 hover:text-pink-600 py-2">Etiquetas</a>
+            <a href="varios.html" class="block text-gray-700 hover:text-pink-600 py-2">Varios</a>
+            <a href="contacto.html" class="block text-gray-700 hover:text-pink-600 py-2">Contacto</a>
+        </div>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="container mx-auto px-6 py-16 pt-32">
+        <!-- Sección Artículos para Fiestas -->
+        <section id="articulos-fiestas" class="mb-20">
+            <h2 class="text-4xl font-bold text-pink-600 mb-4 text-center">Artículos para Fiestas</h2>
+            <p class="max-w-3xl mx-auto text-lg text-gray-600 mb-12 text-center">Dale un toque único a tus celebraciones con nuestros artículos personalizados. ¡Todo lo que necesitas para una fiesta inolvidable!</p>
+            
+            <!-- Galería de Productos -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Producto de ejemplo 1 -->
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://placehold.co/600x400/fecdd3/ffffff?text=Producto+1" alt="Artículo para Fiesta 1" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-craft text-gray-800 mb-2">Banderines Personalizados</h3>
+                        <p class="text-gray-600">Banderines con el nombre y la temática que elijas.</p>
+                    </div>
+                </div>
+
+                <!-- Producto de ejemplo 2 -->
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://placehold.co/600x400/e0e7ff/ffffff?text=Producto+2" alt="Artículo para Fiesta 2" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-craft text-gray-800 mb-2">Toppers para Pastel</h3>
+                        <p class="text-gray-600">El detalle perfecto para decorar tu pastel de cumpleaños.</p>
+                    </div>
+                </div>
+                
+                <!-- Producto de ejemplo 3 -->
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://placehold.co/600x400/d1fae5/ffffff?text=Producto+3" alt="Artículo para Fiesta 3" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-craft text-gray-800 mb-2">Cajitas para Dulces</h3>
+                        <p class="text-gray-600">Cajitas temáticas para regalar a tus invitados.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 border-t">
+        <div class="container mx-auto px-6 py-8 text-center text-gray-600">
+            <p>&copy; 2025 ChakiArt. Todos los derechos reservados.</p>
+            <p class="mt-2">Hecho con ❤️ para tus momentos especiales.</p>
+        </div>
+    </footer>
+
+
+    <!-- Modal para imagen ampliada (Si lo necesitas en esta página, ya está listo) -->
+    <div id="image-modal" class="fixed top-0 left-0 w-full h-full bg-black bg-opacity-80 flex justify-center items-center z-[100] hidden">
+        <span id="close-modal" class="absolute top-4 right-6 text-white text-4xl font-bold cursor-pointer">&times;</span>
+        <img id="modal-image" src="" alt="Vista ampliada" class="max-w-[90%] max-h-[90%] object-contain">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

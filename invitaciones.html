@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitaciones - ChakiArt</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Enlace a la hoja de estilos CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-[#FFFBF5]">
+
+    <!-- Encabezado y Navegación -->
+    <header id="header" class="bg-white/80 backdrop-blur-sm fixed top-0 left-0 w-full z-50 shadow-md smooth-transition">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-2">
+                <!-- Ruta actualizada del logo -->
+                <img src="images/chakiart_logo.png" alt="Logo ChakiArt" class="h-12 w-12 object-contain" onerror="this.onerror=null;this.src='https://placehold.co/100x100/FFFBF5/4A4A4A?text=Logo';">
+                <span class="text-2xl font-craft text-pink-600">ChakiArt</span>
+            </a>
+            
+            <nav class="hidden md:flex items-center space-x-8">
+                <div class="dropdown relative">
+                    <!-- CORRECCIÓN: Se agrega padding inferior (pb-3) y un margen negativo (-mb-3) para crear un "puente" invisible que mantiene el hover -->
+                    <a href="invitaciones.html" class="text-pink-600 font-bold smooth-transition pb-3 -mb-3">Invitaciones</a>
+                    <!-- CORRECCIÓN: Se elimina el margen superior (mt-2) que causaba el espacio -->
+                    <div class="dropdown-content rounded-md bg-white shadow-lg py-1">
+                        <a href="#invitaciones-fisicas" class="block px-4 py-2 text-sm text-gray-700 hover:bg-pink-100 hover:text-pink-600">Físicas</a>
+                        <a href="#invitaciones-digitales" class="block px-4 py-2 text-sm text-gray-700 hover:bg-pink-100 hover:text-pink-600">Digitales</a>
+                    </div>
+                </div>
+                <a href="articulos.html" class="text-gray-700 hover:text-pink-600 smooth-transition">Artículos para Fiestas</a>
+                <a href="etiquetas.html" class="text-gray-700 hover:text-pink-600 smooth-transition">Etiquetas</a>
+                <a href="varios.html" class="text-gray-700 hover:text-pink-600 smooth-transition">Varios</a>
+                 <a href="contacto.html" class="text-gray-700 hover:text-pink-600 smooth-transition">Contacto</a>
+            </nav>
+
+            <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4 space-y-2 bg-white">
+            <a href="invitaciones.html" class="block text-pink-600 font-bold py-2">Invitaciones</a>
+            <a href="articulos.html" class="block text-gray-700 hover:text-pink-600 py-2">Artículos para Fiestas</a>
+            <a href="etiquetas.html" class="block text-gray-700 hover:text-pink-600 py-2">Etiquetas</a>
+            <a href="varios.html" class="block text-gray-700 hover:text-pink-600 py-2">Varios</a>
+             <a href="contacto.html" class="block text-gray-700 hover:text-pink-600 py-2">Contacto</a>
+        </div>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="container mx-auto px-6 py-16 pt-32">
+        <!-- Sección Invitaciones Físicas -->
+        <section id="invitaciones-fisicas" class="mb-20 scroll-mt-24">
+            <h2 class="text-4xl font-bold text-pink-600 mb-4 text-center">Invitaciones Físicas</h2>
+            <p class="max-w-3xl mx-auto text-lg text-gray-600 mb-12 text-center">El encanto de lo tangible. Diseños únicos y personalizados impresos con la más alta calidad.</p>
+            
+            <!-- Galería de Productos -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Producto 1: Stich 1 (con 2 imágenes) -->
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="images/Invitacion stitch_1.jpg" alt="Invitación Stich 1 - Vista 1" class="w-full h-64 object-contain bg-gray-100 cursor-pointer main-image" onerror="this.onerror=null;this.src='https://placehold.co/600x400/d3a1b4/ffffff?text=Stich+1';">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-craft text-gray-800 mb-2">Invitación "Stich 1"</h3>
+                        <p class="text-gray-600 mb-4">Una adorable invitación perfecta para cumpleaños temáticos.</p>
+                        <div class="flex space-x-2">
+                            <img src="images/Invitacion stitch_1.jpg" alt="Miniatura 1" class="w-16 h-16 object-cover rounded-md border-2 border-pink-500 cursor-pointer thumbnail-image" onerror="this.onerror=null;this.src='https://placehold.co/100x100/d3a1b4/ffffff?text=1';">
+                            <img src="images/Invitacion stitch_2.jpg" alt="Miniatura 2" class="w-16 h-16 object-cover rounded-md border-2 border-transparent hover:border-pink-500 cursor-pointer thumbnail-image" onerror="this.onerror=null;this.src='https://placehold.co/100x100/d3a1b4/ffffff?text=2';">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 2 (Ejemplo con 1 imagen)
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://placehold.co/600x400/a2d2ff/ffffff?text=Producto+2" alt="Producto 2" class="w-full h-64 object-contain bg-gray-100 cursor-pointer main-image">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-craft text-gray-800 mb-2">Otro Diseño</h3>
+                        <p class="text-gray-600">Descripción breve del producto.</p>
+                    </div>
+                </div>
+            -->
+            </div>
+        </section>
+
+        <!-- Sección Invitaciones Digitales -->
+        <section id="invitaciones-digitales" class="mb-20 scroll-mt-24">
+            <h2 class="text-4xl font-bold text-pink-600 mb-4 text-center">Invitaciones Digitales</h2>
+            <p class="max-w-3xl mx-auto text-lg text-gray-600 mb-12 text-center">Modernas y ecológicas. Sorprende a tus invitados con videos y diseños animados.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Producto Digital 1 (Video) -->
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+                    <div class="w-full h-96 bg-gray-100 flex items-center justify-center">
+                        <video controls muted preload="metadata" playsinline poster="images/kuromi-miniatura.jpg" class="max-w-full max-h-full interactive-video cursor-pointer">
+                            <source src="videos/kuromi_1.mp4" type="video/mp4">
+                            Tu navegador no soporta videos.
+                        </video>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-craft text-gray-800 mb-2">Invitación kuromi</h3>
+                        <p class="text-gray-600">Invitación en video para compartir por WhatsApp.</p>
+                    </div>
+                </div>
+
+                <!--Producto kitty 1 -->
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+                    <div class="w-full h-96 bg-gray-100 flex items-center justify-center">
+                        <video controls muted preload="metadata" playsinline poster="images/kitty-Miniatura.jpg" class="max-w-full max-h-full interactive-video cursor-pointer">
+                            <source src="videos/Kitty_1.mp4" type="video/mp4">
+                            Tu navegador no soporta videos.
+                        </video>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-craft text-gray-800 mb-2">Invitación Kitty</h3>
+                        <p class="text-gray-600">Invitación en video para compartir por WhatsApp.</p>
+                    </div>
+                </div> 
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 border-t">
+        <div class="container mx-auto px-6 py-8 text-center text-gray-600">
+            <p>&copy; 2025 ChakiArt. Todos los derechos reservados.</p>
+            <p class="mt-2">Hecho con ❤️ para tus momentos especiales.</p>
+        </div>
+    </footer>
+
+
+    <!-- Modal para imagen ampliada -->
+    <div id="image-modal" class="fixed top-0 left-0 w-full h-full bg-black bg-opacity-80 flex justify-center items-center z-[100] hidden">
+        <span id="close-modal" class="absolute top-4 right-6 text-white text-4xl font-bold cursor-pointer">&times;</span>
+        <img id="modal-image" src="" alt="Vista ampliada" class="max-w-[90%] max-h-[90%] object-contain">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
