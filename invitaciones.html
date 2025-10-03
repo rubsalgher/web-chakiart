@@ -35,9 +35,9 @@
                     </div>
                 </div>
                 <a href="articulos.html" class="text-gray-700 hover:text-pink-600 smooth-transition">Artículos para Fiestas</a>
-                <a href="etiquetas.html" class="text-gray-700 hover:text-pink-600 smooth-transition">Etiquetas</a>
                 <a href="varios.html" class="text-gray-700 hover:text-pink-600 smooth-transition">Varios</a>
-                 <a href="contacto.html" class="text-gray-700 hover:text-pink-600 smooth-transition">Contacto</a>
+                <a href="servicios.html" class="text-gray-700 hover:text-pink-600 smooth-transition">Servicios Digitales</a>
+                <a href="contacto.html" class="text-gray-700 hover:text-pink-600 smooth-transition">Contacto</a>
             </nav>
 
             <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
@@ -48,9 +48,9 @@
         <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4 space-y-2 bg-white">
             <a href="invitaciones.html" class="block text-pink-600 font-bold py-2">Invitaciones</a>
             <a href="articulos.html" class="block text-gray-700 hover:text-pink-600 py-2">Artículos para Fiestas</a>
-            <a href="etiquetas.html" class="block text-gray-700 hover:text-pink-600 py-2">Etiquetas</a>
             <a href="varios.html" class="block text-gray-700 hover:text-pink-600 py-2">Varios</a>
-             <a href="contacto.html" class="block text-gray-700 hover:text-pink-600 py-2">Contacto</a>
+            <a href="servicios.html" class="block text-gray-700 hover:text-pink-600 py-2">Servicios Digitales</a>
+            <a href="contacto.html" class="block text-gray-700 hover:text-pink-600 py-2">Contacto</a>
         </div>
     </header>
 
@@ -135,10 +135,17 @@
     </footer>
 
 
-    <!-- Modal para imagen ampliada -->
+    <!-- Modal para imagen ampliada con controles de navegación -->
     <div id="image-modal" class="fixed top-0 left-0 w-full h-full bg-black bg-opacity-80 flex justify-center items-center z-[100] hidden">
-        <span id="close-modal" class="absolute top-4 right-6 text-white text-4xl font-bold cursor-pointer">&times;</span>
-        <img id="modal-image" src="" alt="Vista ampliada" class="max-w-[90%] max-h-[90%] object-contain">
+        <span id="close-modal" class="absolute top-4 right-6 text-white text-4xl font-bold cursor-pointer hover:text-gray-300">&times;</span>
+        
+        <!-- Botón Anterior -->
+        <button id="modal-prev" class="absolute left-4 top-1/2 -translate-y-1/2 text-white text-5xl font-bold cursor-pointer hover:text-gray-300">&#10094;</button>
+        
+        <img id="modal-image" src="" alt="Vista ampliada" class="max-w-[85%] md:max-w-[70%] max-h-[90%] object-contain">
+        
+        <!-- Botón Siguiente -->
+        <button id="modal-next" class="absolute right-4 top-1/2 -translate-y-1/2 text-white text-5xl font-bold cursor-pointer hover:text-gray-300">&#10095;</button>
     </div>
 
     <script src="script.js"></script>

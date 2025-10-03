@@ -10,13 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     
-    <style>
-        body { font-family: 'Inter', sans-serif; background-color: #FFFBF5; color: #4A4A4A; }
-        h1, h2, h3, .font-craft { font-family: 'Kalam', cursive; }
-        .dropdown-content { display: none; position: absolute; background-color: #f1f1f1; min-width: 160px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1; }
-        .dropdown:hover .dropdown-content { display: block; }
-        .smooth-transition { transition: all 0.3s ease-in-out; }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-[#FFFBF5]">
 
@@ -35,12 +29,12 @@
                     <!-- CORRECCIÓN: Se elimina el margen superior (mt-2) que causaba el espacio -->
                     <div class="dropdown-content rounded-md bg-white shadow-lg py-1">
                         <a href="invitaciones.html#invitaciones-fisicas" class="block px-4 py-2 text-sm text-gray-700 hover:bg-pink-100 hover:text-pink-600">Físicas</a>
-                        <a href="invitaciones.html#invitaciones-digitales" class="block px-4 py-2 text-sm text-gray-700 hover:bg-pink-100 hover:text-pink-600">Digitales</a>
+                        <a href="invitaciones.html#invitaciones-digitales" class="block px-4 py-2 text-sm text-gray-700 hover:bg-pink-100 hover:text-pink-600">Digitales</a>v
                     </div>
                 </div>
                 <a href="articulos.html" class="text-gray-700 hover:text-pink-600 smooth-transition">Artículos para Fiestas</a>
-                <a href="etiquetas.html" class="text-gray-700 hover:text-pink-600 smooth-transition">Etiquetas</a>
                 <a href="varios.html" class="text-pink-600 font-bold smooth-transition">Varios</a>
+                <a href="servicios.html" class="text-gray-700 hover:text-pink-600 smooth-transition">Servicios Digitales</a>
                 <a href="contacto.html" class="text-gray-700 hover:text-pink-600 smooth-transition">Contacto</a>
             </nav>
 
@@ -52,8 +46,8 @@
         <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4 space-y-2 bg-white">
             <a href="invitaciones.html" class="block text-gray-700 hover:text-pink-600 py-2">Invitaciones</a>
             <a href="articulos.html" class="block text-gray-700 hover:text-pink-600 py-2">Artículos para Fiestas</a>
-            <a href="etiquetas.html" class="block text-gray-700 hover:text-pink-600 py-2">Etiquetas</a>
             <a href="varios.html" class="block text-pink-600 font-bold py-2">Varios</a>
+            <a href="servicios.html" class="block text-gray-700 hover:text-pink-600 py-2">Servicios Digitales</a>
             <a href="contacto.html" class="block text-pink-600 font-bold py-2">Contacto</a>
         </div>
     </header>
@@ -61,9 +55,76 @@
     <!-- Contenido Principal -->
     <main class="container mx-auto px-6 py-16 pt-32">
         <section id="varios" class="mb-20 text-center">
-            <h2 class="text-4xl font-bold text-gray-700 mb-4">Varios</h2>
-            <p class="max-w-3xl mx-auto text-lg text-gray-600">Descubre otros productos creativos que tenemos para ti. ¡Siempre estamos innovando para ofrecerte lo mejor!</p>
-            <div class="mt-8 text-gray-400 text-sm">Próximamente...</div>
+            <h2 class="text-4xl font-bold text-pink-600 mb-4 text-center">Varios</h2>
+            <p class="max-w-3xl mx-auto text-lg text-gray-600 mb-12">Descubre otros productos creativos que tenemos para ti. ¡Siempre estamos innovando para ofrecerte lo mejor!</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Producto 1: Sanrio(con 4 imágenes) -->
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="images/Agenda_1.png" alt="Agenda_sanrio - Vista 1" class="w-full h-64 object-contain bg-gray-100 cursor-pointer main-image" onerror="this.onerror=null;this.src='https://placehold.co/600x400/d3a1b4/ffffff?text=Stich+1';">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-craft text-gray-800 mb-2">Agendas Sanrio</h3>
+                        <p class="text-gray-600 mb-4">Llevate tu agenda con la temática que prefieras</p>
+                        <div class="flex space-x-2">
+                            <img src="images/Agenda_1.png" alt="Miniatura 1" class="w-16 h-16 object-cover rounded-md border-2 border-pink-500 cursor-pointer thumbnail-image" onerror="this.onerror=null;this.src='https://placehold.co/100x100/d3a1b4/ffffff?text=1';">
+                            <img src="images/Agenda_2.png" alt="Miniatura 2" class="w-16 h-16 object-cover rounded-md border-2 border-transparent hover:border-pink-500 cursor-pointer thumbnail-image" onerror="this.onerror=null;this.src='https://placehold.co/100x100/d3a1b4/ffffff?text=2';">
+                            <img src="images/Agenda_3.png" alt="Miniatura 3" class="w-16 h-16 object-cover rounded-md border-2 border-transparent hover:border-pink-500 cursor-pointer thumbnail-image" onerror="this.onerror=null;this.src='https://placehold.co/100x100/d3a1b4/ffffff?text=2';">
+                            <img src="images/Agenda_4.png" alt="Miniatura 4" class="w-16 h-16 object-cover rounded-md border-2 border-transparent hover:border-pink-500 cursor-pointer thumbnail-image" onerror="this.onerror=null;this.src='https://placehold.co/100x100/d3a1b4/ffffff?text=2';">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 2: snoopy(con 4 imágenes) -->
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="images/libreta_snoopy1.JPG" alt="Libreta Snoopy - Vista 1" class="w-full h-64 object-contain bg-gray-100 cursor-pointer main-image" onerror="this.onerror=null;this.src='https://placehold.co/600x400/d3a1b4/ffffff?text=Stich+1';">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-craft text-gray-800 mb-2">Libreta Cuadros Snoopy</h3>
+                        <p class="text-gray-600 mb-4">Llevate tu agenda con la temática que prefieras</p>
+                        <div class="flex space-x-2">
+                            <img src="images/libreta_snoopy1.JPG" alt="Miniatura 1" class="w-16 h-16 object-cover rounded-md border-2 border-pink-500 cursor-pointer thumbnail-image" onerror="this.onerror=null;this.src='https://placehold.co/100x100/d3a1b4/ffffff?text=1';">
+                            <img src="images/libreta_snoopy2.JPG" alt="Miniatura 2" class="w-16 h-16 object-cover rounded-md border-2 border-transparent hover:border-pink-500 cursor-pointer thumbnail-image" onerror="this.onerror=null;this.src='https://placehold.co/100x100/d3a1b4/ffffff?text=2';">
+                            <img src="images/libreta_snoopy3.JPG" alt="Miniatura 3" class="w-16 h-16 object-cover rounded-md border-2 border-transparent hover:border-pink-500 cursor-pointer thumbnail-image" onerror="this.onerror=null;this.src='https://placehold.co/100x100/d3a1b4/ffffff?text=2';">
+                            <img src="images/libreta_snoopy4.png" alt="Miniatura 4" class="w-16 h-16 object-cover rounded-md border-2 border-transparent hover:border-pink-500 cursor-pointer thumbnail-image" onerror="this.onerror=null;this.src='https://placehold.co/100x100/d3a1b4/ffffff?text=2';">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 3: capibara(con 3 imágenes) -->
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="images/libreta_capibara1.png" alt="Libreta Capibara - Vista 1" class="w-full h-64 object-contain bg-gray-100 cursor-pointer main-image" onerror="this.onerror=null;this.src='https://placehold.co/600x400/d3a1b4/ffffff?text=Stich+1';">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-craft text-gray-800 mb-2">Libretita Cuadrada Capibara</h3>
+                        <p class="text-gray-600 mb-4">Bonita libreta cuadrada de notas</p>
+                        <div class="flex space-x-2">
+                            <img src="images/libreta_capibara1.png" alt="Miniatura 1" class="w-16 h-16 object-cover rounded-md border-2 border-pink-500 cursor-pointer thumbnail-image" onerror="this.onerror=null;this.src='https://placehold.co/100x100/d3a1b4/ffffff?text=1';">
+                            <img src="images/libreta_capibara2.png" alt="Miniatura 2" class="w-16 h-16 object-cover rounded-md border-2 border-transparent hover:border-pink-500 cursor-pointer thumbnail-image" onerror="this.onerror=null;this.src='https://placehold.co/100x100/d3a1b4/ffffff?text=2';">
+                            <img src="images/libreta_capibara3.png" alt="Miniatura 3" class="w-16 h-16 object-cover rounded-md border-2 border-transparent hover:border-pink-500 cursor-pointer thumbnail-image" onerror="this.onerror=null;this.src='https://placehold.co/100x100/d3a1b4/ffffff?text=2';">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 4: tazas -->
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="images/tazas_1.png" alt="Libreta Capibara - Vista 1" class="w-full h-64 object-contain bg-gray-100 cursor-pointer main-image" onerror="this.onerror=null;this.src='https://placehold.co/600x400/d3a1b4/ffffff?text=Stich+1';">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-craft text-gray-800 mb-2">Tazas personalizadas</h3>
+                        <p class="text-gray-600 mb-4">Tazas personalizadas con vinyl, cualquier diseño o texto</p>
+                    </div>
+                </div>
+
+                <!-- Producto 5: Etiquetas -->
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="images/etiquetas_1.png" alt="Etiquetas varias" class="w-full h-64 object-contain bg-gray-100 main-image cursor-pointer">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-craft text-gray-800 mb-2">Etiquetas varias</h3>
+                        <p class="text-gray-600">Etiquetas escolares, vasos, dulceros.</p>
+                    </div>
+                </div>
+
+                <!-- Aquí se pueden agregar más productos -->
+
+            </div>
         </section>
     </main>
 
@@ -74,6 +135,19 @@
             <p class="mt-2">Hecho con ❤️ para tus momentos especiales.</p>
         </div>
     </footer>
+
+    <!-- Modal para imagen ampliada con controles de navegación -->
+    <div id="image-modal" class="fixed top-0 left-0 w-full h-full bg-black bg-opacity-80 flex justify-center items-center z-[100] hidden">
+        <span id="close-modal" class="absolute top-4 right-6 text-white text-4xl font-bold cursor-pointer hover:text-gray-300">&times;</span>
+        
+        <!-- Botón Anterior -->
+        <button id="modal-prev" class="absolute left-4 top-1/2 -translate-y-1/2 text-white text-5xl font-bold cursor-pointer hover:text-gray-300">&#10094;</button>
+        
+        <img id="modal-image" src="" alt="Vista ampliada" class="max-w-[85%] md:max-w-[70%] max-h-[90%] object-contain">
+        
+        <!-- Botón Siguiente -->
+        <button id="modal-next" class="absolute right-4 top-1/2 -translate-y-1/2 text-white text-5xl font-bold cursor-pointer hover:text-gray-300">&#10095;</button>
+    </div>
 
     <script src="script.js"></script>
 </body>
